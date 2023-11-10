@@ -1,0 +1,625 @@
+syntax = "proto3";
+
+package big;
+
+service Authorization {
+  rpc GetLink(Environment) returns (AuthorizationLink) {}
+  rpc SingIn(SingInRequest) returns (AuthorizationToken) {}
+  rpc Verify(AuthorizationToken) returns (VerifyResponse) {}
+  rpc SingInAsUser(SingInAsUserRequest) returns (AuthorizationToken) {}
+  rpc SingInAsUser1(SingInAsUserRequest1) returns (AuthorizationToken1) {}
+  rpc SingInAsUser2(SingInAsUserRequest2) returns (AuthorizationToken2) {}
+  rpc SingInAsUser3(SingInAsUserRequest3) returns (AuthorizationToken3) {}
+  rpc SingInAsUser4(SingInAsUserRequest4) returns (AuthorizationToken4) {}
+  rpc SingInAsUser5(SingInAsUserRequest5) returns (AuthorizationToken5) {}
+  rpc SingInAsUser6(SingInAsUserRequest6) returns (AuthorizationToken6) {}
+  rpc SingInAsUser7(SingInAsUserRequest7) returns (AuthorizationToken7) {}
+  rpc SingInAsUser8(SingInAsUserRequest8) returns (AuthorizationToken8) {}
+  rpc SingInAsUser9(SingInAsUserRequest9) returns (AuthorizationToken9) {}
+  rpc SingInAsUser10(SingInAsUserRequest10) returns (AuthorizationToken10) {}
+  rpc SingInAsUser11(SingInAsUserRequest11) returns (AuthorizationToken11) {}
+  rpc SingInAsUser12(SingInAsUserRequest12) returns (AuthorizationToken12) {}
+  rpc SingInAsUser13(SingInAsUserRequest13) returns (AuthorizationToken13) {}
+  rpc SingInAsUser14(SingInAsUserRequest14) returns (AuthorizationToken14) {}
+  rpc SingInAsUser15(SingInAsUserRequest15) returns (AuthorizationToken15) {}
+  rpc SingInAsUser16(SingInAsUserRequest16) returns (AuthorizationToken16) {}
+  rpc SingInAsUser17(SingInAsUserRequest17) returns (AuthorizationToken17) {}
+  rpc SingInAsUser18(SingInAsUserRequest18) returns (AuthorizationToken18) {}
+  rpc SingInAsUser19(SingInAsUserRequest19) returns (AuthorizationToken19) {}
+  rpc SingInAsUser20(SingInAsUserRequest20) returns (AuthorizationToken20) {}
+  rpc SingInAsUser21(SingInAsUserRequest21) returns (AuthorizationToken21) {}
+  rpc SingInAsUser22(SingInAsUserRequest22) returns (AuthorizationToken22) {}
+  rpc SingInAsUser23(SingInAsUserRequest23) returns (AuthorizationToken23) {}
+  rpc SingInAsUser24(SingInAsUserRequest24) returns (AuthorizationToken24) {}
+  rpc SingInAsUser25(SingInAsUserRequest25) returns (AuthorizationToken25) {}
+  rpc SingInAsUser26(SingInAsUserRequest26) returns (AuthorizationToken26) {}
+  rpc SingInAsUser27(SingInAsUserRequest27) returns (AuthorizationToken27) {}
+  rpc SingInAsUser28(SingInAsUserRequest28) returns (AuthorizationToken28) {}
+  rpc SingInAsUser29(SingInAsUserRequest29) returns (AuthorizationToken29) {}
+  rpc SingInAsUser30(SingInAsUserRequest30) returns (AuthorizationToken30) {}
+  rpc SingInAsUser31(SingInAsUserRequest31) returns (AuthorizationToken31) {}
+  rpc SingInAsUser32(SingInAsUserRequest32) returns (AuthorizationToken32) {}
+  rpc SingInAsUser33(SingInAsUserRequest33) returns (AuthorizationToken33) {}
+  rpc SingInAsUser34(SingInAsUserRequest34) returns (AuthorizationToken34) {}
+  rpc SingInAsUser35(SingInAsUserRequest35) returns (AuthorizationToken35) {}
+  rpc SingInAsUser36(SingInAsUserRequest36) returns (AuthorizationToken36) {}
+  rpc SingInAsUser37(SingInAsUserRequest37) returns (AuthorizationToken37) {}
+  rpc SingInAsUser38(SingInAsUserRequest38) returns (AuthorizationToken38) {}
+  rpc SingInAsUser39(SingInAsUserRequest39) returns (AuthorizationToken39) {}
+  rpc SingInAsUser40(SingInAsUserRequest40) returns (AuthorizationToken40) {}
+  rpc SingInAsUser41(SingInAsUserRequest41) returns (AuthorizationToken41) {}
+  rpc SingInAsUser42(SingInAsUserRequest42) returns (AuthorizationToken42) {}
+  rpc SingInAsUser43(SingInAsUserRequest43) returns (AuthorizationToken43) {}
+  rpc SingInAsUser44(SingInAsUserRequest44) returns (AuthorizationToken44) {}
+  rpc SingInAsUser45(SingInAsUserRequest45) returns (AuthorizationToken45) {}
+  rpc SingInAsUser46(SingInAsUserRequest46) returns (AuthorizationToken46) {}
+  rpc SingInAsUser47(SingInAsUserRequest47) returns (AuthorizationToken47) {}
+  rpc SingInAsUser48(SingInAsUserRequest48) returns (AuthorizationToken48) {}
+  rpc SingInAsUser49(SingInAsUserRequest49) returns (AuthorizationToken49) {}
+  rpc SingInAsUser50(SingInAsUserRequest50) returns (AuthorizationToken50) {}
+  rpc SingInAsUser51(SingInAsUserRequest51) returns (AuthorizationToken51) {}
+  rpc SingInAsUser52(SingInAsUserRequest52) returns (AuthorizationToken52) {}
+  rpc SingInAsUser53(SingInAsUserRequest53) returns (AuthorizationToken53) {}
+  rpc SingInAsUser54(SingInAsUserRequest54) returns (AuthorizationToken54) {}
+  rpc SingInAsUser55(SingInAsUserRequest55) returns (AuthorizationToken55) {}
+  rpc SingInAsUser56(SingInAsUserRequest56) returns (AuthorizationToken56) {}
+  rpc SingInAsUser57(SingInAsUserRequest57) returns (AuthorizationToken57) {}
+  rpc SingInAsUser58(SingInAsUserRequest58) returns (AuthorizationToken58) {}
+  rpc SingInAsUser59(SingInAsUserRequest59) returns (AuthorizationToken59) {}
+  rpc SingInAsUser60(SingInAsUserRequest60) returns (AuthorizationToken60) {}
+  rpc SingInAsUser61(SingInAsUserRequest61) returns (AuthorizationToken61) {}
+  rpc SingInAsUser62(SingInAsUserRequest62) returns (AuthorizationToken62) {}
+  rpc SingInAsUser63(SingInAsUserRequest63) returns (AuthorizationToken63) {}
+  rpc SingInAsUser64(SingInAsUserRequest64) returns (AuthorizationToken64) {}
+  rpc SingInAsUser65(SingInAsUserRequest65) returns (AuthorizationToken65) {}
+  rpc SingInAsUser66(SingInAsUserRequest66) returns (AuthorizationToken66) {}
+  rpc SingInAsUser67(SingInAsUserRequest67) returns (AuthorizationToken67) {}
+  rpc SingInAsUser68(SingInAsUserRequest68) returns (AuthorizationToken68) {}
+  rpc SingInAsUser69(SingInAsUserRequest69) returns (AuthorizationToken69) {}
+  rpc SingInAsUser70(SingInAsUserRequest70) returns (AuthorizationToken70) {}
+  rpc SingInAsUser71(SingInAsUserRequest71) returns (AuthorizationToken71) {}
+  rpc SingInAsUser72(SingInAsUserRequest72) returns (AuthorizationToken72) {}
+  rpc SingInAsUser73(SingInAsUserRequest73) returns (AuthorizationToken73) {}
+  rpc SingInAsUser74(SingInAsUserRequest74) returns (AuthorizationToken74) {}
+  rpc SingInAsUser75(SingInAsUserRequest75) returns (AuthorizationToken75) {}
+  rpc SingInAsUser76(SingInAsUserRequest76) returns (AuthorizationToken76) {}
+  rpc SingInAsUser77(SingInAsUserRequest77) returns (AuthorizationToken77) {}
+  rpc SingInAsUser78(SingInAsUserRequest78) returns (AuthorizationToken78) {}
+  rpc SingInAsUser79(SingInAsUserRequest79) returns (AuthorizationToken79) {}
+  rpc SingInAsUser80(SingInAsUserRequest80) returns (AuthorizationToken80) {}
+  rpc SingInAsUser81(SingInAsUserRequest81) returns (AuthorizationToken81) {}
+  rpc SingInAsUser82(SingInAsUserRequest82) returns (AuthorizationToken82) {}
+  rpc SingInAsUser83(SingInAsUserRequest83) returns (AuthorizationToken83) {}
+  rpc SingInAsUser84(SingInAsUserRequest84) returns (AuthorizationToken84) {}
+  rpc SingInAsUser85(SingInAsUserRequest85) returns (AuthorizationToken85) {}
+  rpc SingInAsUser86(SingInAsUserRequest86) returns (AuthorizationToken86) {}
+  rpc SingInAsUser87(SingInAsUserRequest87) returns (AuthorizationToken87) {}
+  rpc SingInAsUser88(SingInAsUserRequest88) returns (AuthorizationToken88) {}
+  rpc SingInAsUser89(SingInAsUserRequest89) returns (AuthorizationToken89) {}
+  rpc SingInAsUser90(SingInAsUserRequest90) returns (AuthorizationToken90) {}
+  rpc SingInAsUser91(SingInAsUserRequest91) returns (AuthorizationToken91) {}
+  rpc SingInAsUser92(SingInAsUserRequest92) returns (AuthorizationToken92) {}
+  rpc SingInAsUser93(SingInAsUserRequest93) returns (AuthorizationToken93) {}
+  rpc SingInAsUser94(SingInAsUserRequest94) returns (AuthorizationToken94) {}
+  rpc SingInAsUser95(SingInAsUserRequest95) returns (AuthorizationToken95) {}
+  rpc SingInAsUser96(SingInAsUserRequest96) returns (AuthorizationToken96) {}
+  rpc SingInAsUser97(SingInAsUserRequest97) returns (AuthorizationToken97) {}
+  rpc SingInAsUser98(SingInAsUserRequest98) returns (AuthorizationToken98) {}
+  rpc SingInAsUser99(SingInAsUserRequest99) returns (AuthorizationToken99) {}
+  rpc SingInAsUser100(SingInAsUserRequest100) returns (AuthorizationToken100) {}
+  rpc SingInAsUser101(SingInAsUserRequest101) returns (AuthorizationToken101) {}
+  rpc SingInAsUser102(SingInAsUserRequest102) returns (AuthorizationToken102) {}
+  rpc SingInAsUser103(SingInAsUserRequest103) returns (AuthorizationToken103) {}
+  rpc SingInAsUser104(SingInAsUserRequest104) returns (AuthorizationToken104) {}
+  rpc SingInAsUser105(SingInAsUserRequest105) returns (AuthorizationToken105) {}
+  rpc SingInAsUser106(SingInAsUserRequest106) returns (AuthorizationToken106) {}
+  rpc SingInAsUser107(SingInAsUserRequest107) returns (AuthorizationToken107) {}
+  rpc SingInAsUser108(SingInAsUserRequest108) returns (AuthorizationToken108) {}
+  rpc SingInAsUser109(SingInAsUserRequest109) returns (AuthorizationToken109) {}
+  rpc SingInAsUser110(SingInAsUserRequest110) returns (AuthorizationToken110) {}
+  rpc SingInAsUser111(SingInAsUserRequest111) returns (AuthorizationToken111) {}
+  rpc SingInAsUser112(SingInAsUserRequest112) returns (AuthorizationToken112) {}
+  rpc SingInAsUser113(SingInAsUserRequest113) returns (AuthorizationToken113) {}
+  rpc SingInAsUser114(SingInAsUserRequest114) returns (AuthorizationToken114) {}
+  rpc SingInAsUser115(SingInAsUserRequest115) returns (AuthorizationToken115) {}
+  rpc SingInAsUser116(SingInAsUserRequest116) returns (AuthorizationToken116) {}
+}
+
+message SingInAsUserRequest1 {
+  int32 userId = 1;
+}message SingInAsUserRequest2 {
+  int32 userId = 1;
+}message SingInAsUserRequest3 {
+  int32 userId = 1;
+}message SingInAsUserRequest4 {
+  int32 userId = 1;
+}message SingInAsUserRequest5 {
+  int32 userId = 1;
+}message SingInAsUserRequest6 {
+  int32 userId = 1;
+}message SingInAsUserRequest7 {
+  int32 userId = 1;
+}message SingInAsUserRequest8 {
+  int32 userId = 1;
+}message SingInAsUserRequest9 {
+  int32 userId = 1;
+}message SingInAsUserRequest10 {
+  int32 userId = 1;
+}message SingInAsUserRequest11 {
+  int32 userId = 1;
+}message SingInAsUserRequest12 {
+  int32 userId = 1;
+}message SingInAsUserRequest13 {
+  int32 userId = 1;
+}message SingInAsUserRequest14 {
+  int32 userId = 1;
+}message SingInAsUserRequest15 {
+  int32 userId = 1;
+}message SingInAsUserRequest16 {
+  int32 userId = 1;
+}message SingInAsUserRequest17 {
+  int32 userId = 1;
+}message SingInAsUserRequest18 {
+  int32 userId = 1;
+}message SingInAsUserRequest19 {
+  int32 userId = 1;
+}message SingInAsUserRequest20 {
+  int32 userId = 1;
+}message SingInAsUserRequest21 {
+  int32 userId = 1;
+}message SingInAsUserRequest22 {
+  int32 userId = 1;
+}message SingInAsUserRequest23 {
+  int32 userId = 1;
+}message SingInAsUserRequest24 {
+  int32 userId = 1;
+}message SingInAsUserRequest25 {
+  int32 userId = 1;
+}message SingInAsUserRequest26 {
+  int32 userId = 1;
+}message SingInAsUserRequest27 {
+  int32 userId = 1;
+}message SingInAsUserRequest28 {
+  int32 userId = 1;
+}message SingInAsUserRequest29 {
+  int32 userId = 1;
+}message SingInAsUserRequest30 {
+  int32 userId = 1;
+}message SingInAsUserRequest31 {
+  int32 userId = 1;
+}message SingInAsUserRequest32 {
+  int32 userId = 1;
+}message SingInAsUserRequest33 {
+  int32 userId = 1;
+}message SingInAsUserRequest34 {
+  int32 userId = 1;
+}message SingInAsUserRequest35 {
+  int32 userId = 1;
+}message SingInAsUserRequest36 {
+  int32 userId = 1;
+}message SingInAsUserRequest37 {
+  int32 userId = 1;
+}message SingInAsUserRequest38 {
+  int32 userId = 1;
+}message SingInAsUserRequest39 {
+  int32 userId = 1;
+}message SingInAsUserRequest40 {
+  int32 userId = 1;
+}message SingInAsUserRequest41 {
+  int32 userId = 1;
+}message SingInAsUserRequest42 {
+  int32 userId = 1;
+}message SingInAsUserRequest43 {
+  int32 userId = 1;
+}message SingInAsUserRequest44 {
+  int32 userId = 1;
+}message SingInAsUserRequest45 {
+  int32 userId = 1;
+}message SingInAsUserRequest46 {
+  int32 userId = 1;
+}message SingInAsUserRequest47 {
+  int32 userId = 1;
+}message SingInAsUserRequest48 {
+  int32 userId = 1;
+}message SingInAsUserRequest49 {
+  int32 userId = 1;
+}message SingInAsUserRequest50 {
+  int32 userId = 1;
+}message SingInAsUserRequest51 {
+  int32 userId = 1;
+}message SingInAsUserRequest52 {
+  int32 userId = 1;
+}message SingInAsUserRequest53 {
+  int32 userId = 1;
+}message SingInAsUserRequest54 {
+  int32 userId = 1;
+}message SingInAsUserRequest55 {
+  int32 userId = 1;
+}message SingInAsUserRequest56 {
+  int32 userId = 1;
+}message SingInAsUserRequest57 {
+  int32 userId = 1;
+}message SingInAsUserRequest58 {
+  int32 userId = 1;
+}message SingInAsUserRequest59 {
+  int32 userId = 1;
+}message SingInAsUserRequest60 {
+  int32 userId = 1;
+}message SingInAsUserRequest61 {
+  int32 userId = 1;
+}message SingInAsUserRequest62 {
+  int32 userId = 1;
+}message SingInAsUserRequest63 {
+  int32 userId = 1;
+}message SingInAsUserRequest64 {
+  int32 userId = 1;
+}message SingInAsUserRequest65 {
+  int32 userId = 1;
+}message SingInAsUserRequest66 {
+  int32 userId = 1;
+}message SingInAsUserRequest67 {
+  int32 userId = 1;
+}message SingInAsUserRequest68 {
+  int32 userId = 1;
+}message SingInAsUserRequest69 {
+  int32 userId = 1;
+}message SingInAsUserRequest70 {
+  int32 userId = 1;
+}message SingInAsUserRequest71 {
+  int32 userId = 1;
+}message SingInAsUserRequest72 {
+  int32 userId = 1;
+}message SingInAsUserRequest73 {
+  int32 userId = 1;
+}message SingInAsUserRequest74 {
+  int32 userId = 1;
+}message SingInAsUserRequest75 {
+  int32 userId = 1;
+}message SingInAsUserRequest76 {
+  int32 userId = 1;
+}message SingInAsUserRequest77 {
+  int32 userId = 1;
+}message SingInAsUserRequest78 {
+  int32 userId = 1;
+}message SingInAsUserRequest79 {
+  int32 userId = 1;
+}message SingInAsUserRequest80 {
+  int32 userId = 1;
+}message SingInAsUserRequest81 {
+  int32 userId = 1;
+}message SingInAsUserRequest82 {
+  int32 userId = 1;
+}message SingInAsUserRequest83 {
+  int32 userId = 1;
+}message SingInAsUserRequest84 {
+  int32 userId = 1;
+}message SingInAsUserRequest85 {
+  int32 userId = 1;
+}message SingInAsUserRequest86 {
+  int32 userId = 1;
+}message SingInAsUserRequest87 {
+  int32 userId = 1;
+}message SingInAsUserRequest88 {
+  int32 userId = 1;
+}message SingInAsUserRequest89 {
+  int32 userId = 1;
+}message SingInAsUserRequest90 {
+  int32 userId = 1;
+}message SingInAsUserRequest91 {
+  int32 userId = 1;
+}message SingInAsUserRequest92 {
+  int32 userId = 1;
+}message SingInAsUserRequest93 {
+  int32 userId = 1;
+}message SingInAsUserRequest94 {
+  int32 userId = 1;
+}message SingInAsUserRequest95 {
+  int32 userId = 1;
+}message SingInAsUserRequest96 {
+  int32 userId = 1;
+}message SingInAsUserRequest97 {
+  int32 userId = 1;
+}message SingInAsUserRequest98 {
+  int32 userId = 1;
+}message SingInAsUserRequest99 {
+  int32 userId = 1;
+}message SingInAsUserRequest100 {
+  int32 userId = 1;
+}message SingInAsUserRequest101 {
+  int32 userId = 1;
+}message SingInAsUserRequest102 {
+  int32 userId = 1;
+}message SingInAsUserRequest103 {
+  int32 userId = 1;
+}message SingInAsUserRequest104 {
+  int32 userId = 1;
+}message SingInAsUserRequest105 {
+  int32 userId = 1;
+}message SingInAsUserRequest106 {
+  int32 userId = 1;
+}message SingInAsUserRequest107 {
+  int32 userId = 1;
+}message SingInAsUserRequest108 {
+  int32 userId = 1;
+}message SingInAsUserRequest109 {
+  int32 userId = 1;
+}message SingInAsUserRequest110 {
+  int32 userId = 1;
+}message SingInAsUserRequest111 {
+  int32 userId = 1;
+}message SingInAsUserRequest112 {
+  int32 userId = 1;
+}message SingInAsUserRequest113 {
+  int32 userId = 1;
+}message SingInAsUserRequest114 {
+  int32 userId = 1;
+}message SingInAsUserRequest115 {
+  int32 userId = 1;
+}message SingInAsUserRequest116 {
+  int32 userId = 1;
+}
+
+message Stub {}
+
+message Environment {
+  string env = 1;
+}
+
+message SingInAsUserRequest {
+  int32 userId = 1;
+}
+
+message AuthorizationLink {
+  string link = 1;
+}
+
+message AuthorizationCode {
+  string code = 1;
+}
+
+message AuthorizationToken {
+  string token = 1;
+}
+
+message VerifyResponse {
+  bool isValid = 1;
+}
+
+message SingInRequest {
+  string code = 1;
+  string env = 2;
+}
+
+message AuthorizationToken1 {
+  string token = 1;
+}message AuthorizationToken2 {
+  string token = 1;
+}message AuthorizationToken3 {
+  string token = 1;
+}message AuthorizationToken4 {
+  string token = 1;
+}message AuthorizationToken5 {
+  string token = 1;
+}message AuthorizationToken6 {
+  string token = 1;
+}message AuthorizationToken7 {
+  string token = 1;
+}message AuthorizationToken8 {
+  string token = 1;
+}message AuthorizationToken9 {
+  string token = 1;
+}message AuthorizationToken10 {
+  string token = 1;
+}message AuthorizationToken11 {
+  string token = 1;
+}message AuthorizationToken12 {
+  string token = 1;
+}message AuthorizationToken13 {
+  string token = 1;
+}message AuthorizationToken14 {
+  string token = 1;
+}message AuthorizationToken15 {
+  string token = 1;
+}message AuthorizationToken16 {
+  string token = 1;
+}message AuthorizationToken17 {
+  string token = 1;
+}message AuthorizationToken18 {
+  string token = 1;
+}message AuthorizationToken19 {
+  string token = 1;
+}message AuthorizationToken20 {
+  string token = 1;
+}message AuthorizationToken21 {
+  string token = 1;
+}message AuthorizationToken22 {
+  string token = 1;
+}message AuthorizationToken23 {
+  string token = 1;
+}message AuthorizationToken24 {
+  string token = 1;
+}message AuthorizationToken25 {
+  string token = 1;
+}message AuthorizationToken26 {
+  string token = 1;
+}message AuthorizationToken27 {
+  string token = 1;
+}message AuthorizationToken28 {
+  string token = 1;
+}message AuthorizationToken29 {
+  string token = 1;
+}message AuthorizationToken30 {
+  string token = 1;
+}message AuthorizationToken31 {
+  string token = 1;
+}message AuthorizationToken32 {
+  string token = 1;
+}message AuthorizationToken33 {
+  string token = 1;
+}message AuthorizationToken34 {
+  string token = 1;
+}message AuthorizationToken35 {
+  string token = 1;
+}message AuthorizationToken36 {
+  string token = 1;
+}message AuthorizationToken37 {
+  string token = 1;
+}message AuthorizationToken38 {
+  string token = 1;
+}message AuthorizationToken39 {
+  string token = 1;
+}message AuthorizationToken40 {
+  string token = 1;
+}message AuthorizationToken41 {
+  string token = 1;
+}message AuthorizationToken42 {
+  string token = 1;
+}message AuthorizationToken43 {
+  string token = 1;
+}message AuthorizationToken44 {
+  string token = 1;
+}message AuthorizationToken45 {
+  string token = 1;
+}message AuthorizationToken46 {
+  string token = 1;
+}message AuthorizationToken47 {
+  string token = 1;
+}message AuthorizationToken48 {
+  string token = 1;
+}message AuthorizationToken49 {
+  string token = 1;
+}message AuthorizationToken50 {
+  string token = 1;
+}message AuthorizationToken51 {
+  string token = 1;
+}message AuthorizationToken52 {
+  string token = 1;
+}message AuthorizationToken53 {
+  string token = 1;
+}message AuthorizationToken54 {
+  string token = 1;
+}message AuthorizationToken55 {
+  string token = 1;
+}message AuthorizationToken56 {
+  string token = 1;
+}message AuthorizationToken57 {
+  string token = 1;
+}message AuthorizationToken58 {
+  string token = 1;
+}message AuthorizationToken59 {
+  string token = 1;
+}message AuthorizationToken60 {
+  string token = 1;
+}message AuthorizationToken61 {
+  string token = 1;
+}message AuthorizationToken62 {
+  string token = 1;
+}message AuthorizationToken63 {
+  string token = 1;
+}message AuthorizationToken64 {
+  string token = 1;
+}message AuthorizationToken65 {
+  string token = 1;
+}message AuthorizationToken66 {
+  string token = 1;
+}message AuthorizationToken67 {
+  string token = 1;
+}message AuthorizationToken68 {
+  string token = 1;
+}message AuthorizationToken69 {
+  string token = 1;
+}message AuthorizationToken70 {
+  string token = 1;
+}message AuthorizationToken71 {
+  string token = 1;
+}message AuthorizationToken72 {
+  string token = 1;
+}message AuthorizationToken73 {
+  string token = 1;
+}message AuthorizationToken74 {
+  string token = 1;
+}message AuthorizationToken75 {
+  string token = 1;
+}message AuthorizationToken76 {
+  string token = 1;
+}message AuthorizationToken77 {
+  string token = 1;
+}message AuthorizationToken78 {
+  string token = 1;
+}message AuthorizationToken79 {
+  string token = 1;
+}message AuthorizationToken80 {
+  string token = 1;
+}message AuthorizationToken81 {
+  string token = 1;
+}message AuthorizationToken82 {
+  string token = 1;
+}message AuthorizationToken83 {
+  string token = 1;
+}message AuthorizationToken84 {
+  string token = 1;
+}message AuthorizationToken85 {
+  string token = 1;
+}message AuthorizationToken86 {
+  string token = 1;
+}message AuthorizationToken87 {
+  string token = 1;
+}message AuthorizationToken88 {
+  string token = 1;
+}message AuthorizationToken89 {
+  string token = 1;
+}message AuthorizationToken90 {
+  string token = 1;
+}message AuthorizationToken91 {
+  string token = 1;
+}message AuthorizationToken92 {
+  string token = 1;
+}message AuthorizationToken93 {
+  string token = 1;
+}message AuthorizationToken94 {
+  string token = 1;
+}message AuthorizationToken95 {
+  string token = 1;
+}message AuthorizationToken96 {
+  string token = 1;
+}message AuthorizationToken97 {
+  string token = 1;
+}message AuthorizationToken98 {
+  string token = 1;
+}message AuthorizationToken99 {
+  string token = 1;
+}message AuthorizationToken100 {
+  string token = 1;
+}message AuthorizationToken101 {
+  string token = 1;
+}message AuthorizationToken102 {
+  string token = 1;
+}message AuthorizationToken103 {
+  string token = 1;
+}message AuthorizationToken104 {
+  string token = 1;
+}message AuthorizationToken105 {
+  string token = 1;
+}message AuthorizationToken106 {
+  string token = 1;
+}message AuthorizationToken107 {
+  string token = 1;
+}message AuthorizationToken108 {
+  string token = 1;
+}message AuthorizationToken109 {
+  string token = 1;
+}message AuthorizationToken110 {
+  string token = 1;
+}message AuthorizationToken111 {
+  string token = 1;
+}message AuthorizationToken112 {
+  string token = 1;
+}message AuthorizationToken113 {
+  string token = 1;
+}message AuthorizationToken114 {
+  string token = 1;
+}message AuthorizationToken115 {
+  string token = 1;
+}message AuthorizationToken116 {
+  string token = 1;
+}
