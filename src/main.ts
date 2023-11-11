@@ -2,7 +2,11 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
 // Hard fix
-// Buffer.prototype.toJSON = () => '';
+// import * as util from 'node:util';
+
+// Buffer.prototype.toJSON = function () {
+//   return util.inspect(this); // '<Buffer 00 00 00 00 00 00 ... 5 more bytes>' as string
+// };
 
 async function bootstrap() {
   const start = performance.now();
